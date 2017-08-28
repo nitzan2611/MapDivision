@@ -8,12 +8,11 @@ using System.Web;
 /// </summary>
 public class ArrivalPriority
 {
-    ServiceProvider s;
-    DateTime dt;
-    public ArrivalPriority()
+    public ServiceProvider serviceProvider { get; set; }
+    public double duration { get; set; }
+    public ArrivalPriority(ServiceProvider _sp, double _dt) 
     {
-        //
-        // TODO: Add constructor logic here
-        //
+        this.serviceProvider = _sp;
+        this.duration = _dt;
     }
 }

@@ -8,10 +8,25 @@ using System.Web;
 /// </summary>
 public abstract class ServiceProvider
 {
-    Location location;
+    public Location location { get; set; }
+  
+
 }
 
 public class Paramedic : ServiceProvider
 {
+    public Paramedic(Location loc)
+    {
+        this.location = loc;
+    }
 
+   
+}
+
+public class ArabicSpeaker : ServiceProvider
+{
+    public ArabicSpeaker(Location loc)
+    {
+        this.location = loc;
+    }
 }

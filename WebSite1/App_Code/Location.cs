@@ -8,10 +8,12 @@ using System.Web;
 /// </summary>
 public class Location
 {
-    public Location()
+    public double xCoord { get; set; }
+    public double yCoord { get; set; }
+    public Location()   {  }
+    public Location(double _xCoord, double _yCoord)
     {
-        //
-        // TODO: Add constructor logic here
-        //
+        this.xCoord = _xCoord;
+        this.yCoord = _yCoord;
     }
 }
