@@ -19,6 +19,26 @@ namespace ConsoleApp1
             Console.WriteLine(res);
             Console.ReadLine();
         }
+        static double GetTimeByCar(double x0, double y0, double x1, double y1)
+        {
+            return GetTimeByCoordinatesMethod(x0, y0, x1, y1);
+        }
+        static double GetTimeByHelicopter(double x0, double y0, double x1, double y1)
+        {
+            return 1.1*GetTimeByCoordinatesMethod(x0, y0, x1, y1);
+
+        }
+        static double GetTimeByWalk(double x0, double y0, double x1, double y1)
+        {
+            return 1.2*GetTimeByCoordinatesMethod(x0, y0, x1, y1);
+
+        }
+        static double GetTimeByArmedCar(double x0, double y0, double x1, double y1)
+        {
+            return 1.3 * GetTimeByCoordinatesMethod(x0, y0, x1, y1);
+
+        }
+
         static int GetTimeByCoordinatesMethod(double x0,double y0,double x1,double y1)
         {
          //  double x0 = 41.43206, y0 = -81.38992, x1 = 41.43206, y1 = -85.38992;
